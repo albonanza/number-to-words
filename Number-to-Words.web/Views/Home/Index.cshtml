@@ -1,0 +1,50 @@
+﻿@model Number_to_Words.web.Models.NumberToWordsViewModel
+
+<div class="container mt-4">
+    <h2 class="text-center">Number to Words Converter</h2>
+
+    <!-- Number input form -->
+    <form id="numberForm" class="form-inline mt-4" method="post" asp-controller="Home" asp-action="Index">
+        <div class="form-group">
+            <div class="input-group">
+                <input type="text" id="number-input" name="NumberInput" class="form-control" placeholder="Enter a number" value="@Model.NumberInput" />
+                <button type="submit" id="convertButton" class="btn btn-primary">Convert</button>
+            </div>
+            <!-- Validation message -->
+            <div id="validationSummary" class="invalid-feedback" style="display: none;"></div>
+        </div>
+    </form>
+
+    <!-- Keypad -->
+    <div class="keypad-container mt-3">
+        <div class="keypad">
+            <button type="button" class="btn btn-secondary keypad-btn" data-value="1">1</button>
+            <button type="button" class="btn btn-secondary keypad-btn" data-value="2">2</button>
+            <button type="button" class="btn btn-secondary keypad-btn" data-value="3">3</button>
+            <button type="button" class="btn btn-secondary keypad-btn" data-value="4">4</button>
+            <button type="button" class="btn btn-secondary keypad-btn" data-value="5">5</button>
+            <button type="button" class="btn btn-secondary keypad-btn" data-value="6">6</button>
+            <button type="button" class="btn btn-secondary keypad-btn" data-value="7">7</button>
+            <button type="button" class="btn btn-secondary keypad-btn" data-value="8">8</button>
+            <button type="button" class="btn btn-secondary keypad-btn" data-value="9">9</button>
+            <button type="button" class="btn btn-secondary keypad-btn" data-value="0">0</button>
+            <button type="button" class="btn btn-secondary keypad-btn" data-value=".">.</button>
+            <button type="button" class="btn btn-secondary keypad-btn" data-value="C">C</button>
+        </div>
+    </div>
+
+    <!-- Conversion result -->
+    <div id="conversionResult" class="mt-3">
+        <p><strong>Result:</strong> <span id="resultText">@Model.Result</span></p>
+    </div>
+
+    <hr />
+
+    <h4>Conversion History</h4>
+    <div id="historyContainer">
+        <ul id="historyList" class="list-group">
+            <!-- Conversion history listed here -->
+        </ul>
+        <button type="button" id="clearHistoryButton" class="btn btn-secondary mt-3">Clear History</button>
+    </div>
+</div>

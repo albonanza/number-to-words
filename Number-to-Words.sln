@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Number-to-Words.web", "Number-to-Words.web\Number-to-Words.web.csproj", "{B2263DDA-93F1-495B-9115-F3D7428B398F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Number-to-Words.tests", "Number-to-Words.tests\Number-to-Words.tests.csproj", "{3EE89CA9-B59E-48D8-9459-34000EC16305}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2263DDA-93F1-495B-9115-F3D7428B398F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2263DDA-93F1-495B-9115-F3D7428B398F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2263DDA-93F1-495B-9115-F3D7428B398F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2263DDA-93F1-495B-9115-F3D7428B398F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EE89CA9-B59E-48D8-9459-34000EC16305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EE89CA9-B59E-48D8-9459-34000EC16305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EE89CA9-B59E-48D8-9459-34000EC16305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EE89CA9-B59E-48D8-9459-34000EC16305}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

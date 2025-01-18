@@ -1,0 +1,130 @@
+/* Base styles and layout */
+
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: #fafafa;
+    margin-bottom: 60px;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    flex: 1;
+}
+
+/* Heading styles */
+
+h2 {
+    color: #000738;
+}
+
+/* Form container styling */
+
+#numberForm {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input-group {
+    width: 100%;
+}
+
+/* Keypad container styling */
+
+.keypad-container {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* Keypad grid layout */
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 100%;
+    justify-items: center;
+}
+
+/* Keypad button styling */
+
+.keypad-btn {
+    width: 100%;
+    max-width: 100px;
+    height: 60px;
+    font-size: 1.5em;
+    transition: transform 0.1s ease;
+}
+
+
+.keypad-btn:active {
+    transform: scale(0.95);
+}
+
+/* Conversion result styling */
+
+#conversionResult {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* History container styling */
+
+#historyContainer {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Styling for history list items */
+
+.list-group-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+}
+
+#clearHistoryButton {
+    display: block;
+    margin: 0 auto;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem #fff;
+}
+
+/* Responsive adjustments for larger screens */
+
+@media (min-width: 768px) {
+    .keypad-btn {
+        height: 80px;
+        font-size: 1.5em;
+    }
+}
+
+/* Responsive adjustments for smaller screens */
+
+@media (max-width: 480px) {
+    .keypad-btn {
+        height: 50px;
+        font-size: 1.2em;
+    }
+
+    /* Adjust font size of number input */
+    #number-input {
+        font-size: 1em;
+    }
+}

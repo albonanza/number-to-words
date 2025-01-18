@@ -216,12 +216,4 @@ In `Program.cs`, services are registered with the DI container:
 
 ---
 
-## Contact
-
-For questions or support, please contact:
-
-**Alan Donovan**
-
-- **Email:** [alanpauldonovan@gmail.com](mailto:alanpauldonovan@gmail.com)
-- **Phone:** 0415 327 704
 

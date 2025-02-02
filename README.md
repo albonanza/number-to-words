@@ -21,7 +21,6 @@ This application is designed with extensibility in mind, allowing for easy addit
 - [Project Structure](#project-structure)
 - [Dependency Injection](#dependency-injection)
 - [Customisation](#customisation)
-- [Contact](#contact)
 
 ---
 
